@@ -1,0 +1,1 @@
+select * from `my-dbt-practice.raw.sales_raw`
