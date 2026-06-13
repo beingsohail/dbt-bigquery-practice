@@ -1,6 +1,7 @@
 with source as (
     select *
-    from `dbt-tutorial.stripe.payment`
+    from {{ source('stripe', 'payment') }}
+    -- from `dbt-tutorial.stripe.payment`
 ),
 
 renamed as (
