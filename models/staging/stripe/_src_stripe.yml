@@ -1,0 +1,6 @@
+sources:
+
+  - name: stripe
+    database: dbt-tutorial
+    tables:
+      - name: payment
