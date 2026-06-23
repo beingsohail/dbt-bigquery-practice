@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: supplier_performance
+    columns:
+      - name: supplier_name
+        data_tests:
+          - unique
+          - not_null
+
+  - name: shipping_analysis
+    columns:
+      - name: shipping_carrier
+        data_tests:
+          - unique
+          - not_null
+        

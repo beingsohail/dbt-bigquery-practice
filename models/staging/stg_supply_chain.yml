@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_supply_chain
+    columns:
+      - name: sku
+        description: Unique stock keeping unit (SKU) identifier for a product.
+        data_tests:
+          - not_null
+          - unique
+          
+          
+      - name: product_type
+        description: indicates the product category
+        data_tests:
+          - not_null
+      
+      - name: supplier_name
+        description: indicates the supplier name
+        data_tests:
+          - not_null
+        
+      - name: defect_rate
+        description: Percentage of products identified as defective during quality inspection.
+        data_tests:
+          - not_null

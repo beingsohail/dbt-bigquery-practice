@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: supply_chain
+    database: my-dbt-practice
+    schema: supply_chain_dbt
+
+    tables:
+      - name: supply_chain_dbt_raw
